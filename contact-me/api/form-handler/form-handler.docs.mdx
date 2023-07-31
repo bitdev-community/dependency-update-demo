@@ -1,0 +1,101 @@
+---
+description: A very basic AWS Lambda
+labels: ['serverless', 'aws', 'lambda', 'demo', 'deployer', 'app']
+---
+
+A basic AWS Lambda function component that handles the form submission request
+
+## Running locally
+
+Run the Lambda using the app name set on `api-lambda.lambda.ts`:
+
+```
+bit run contact-api-lambda
+```
+
+You should see a message in the console like the following:
+
+```sh
+contact-api-lambda app is running on http://localhost:3000
+```
+
+To test your lambda function, you can make a POST request to the URL where it is running.
+To test an event, pass it to the body of the request:
+
+```sh
+curl --location --request POST 'http://localhost:3000' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "event":{
+      requestContext: {
+        http: {
+          method: 'POST',
+          path: 'api/contact'
+        }
+      },
+      body: JSON.stringify({ name: 'John', email: 'john@example.com', subject: 'Your Address', message: 'Hey. May I know your address please?' })
+    }
+}'
+```
+
+Response
+
+```json
+{
+  "data": {
+    "statusCode": 200,
+    "headers": { "Content-Type": "application/json" },
+    "response" : "Hi John, Thank you for contacting me. I will get back to you shortly."
+  }
+}
+```
+
+## Deploy the Lambda function to AWS
+
+Make sure to configure `deployOptions` within your Lambda as shown below. It is recommended to store your credentials in environment variables.
+
+```ts
+ deployOptions: {
+    clientConfig: {
+      /* the aws hosting region */
+      region: 'us-east-1',
+      /* your aws credentials */
+      credentials: {
+        secretAccessKey: process.env.AWS_SECRET_KEY,
+        accessKeyId: process.env.AWS_ACCESS_KEY_ID,
+      },
+       /* lambda endpoint url configurations.  */
+      urlOptions: {
+        authType: 'NONE',
+        invokeMode: 'BUFFERED',
+        cors: {
+          allowOrigins: ['*'],
+          allowMethods: ['GET']
+        }
+      },
+    },
+```
+
+Once done, your component would be deployed on your next tag:
+
+```
+bit tag -m "Deploy Lambda"
+```
+
+Visit your AWS console and you will see the Lambda function deployed.
+
+## Setting up Lambda
+
+To test the function in cloud, you can configure the Lambda test event from the Lambda web console with the following event data.
+
+```json
+{
+  "requestContext": {
+    "http": {
+      "method": "POST",
+      "path": "/api/form-handler"
+    }
+  },
+  "body": "{\"name\":\"John\",\"email\":\"john@example.com\"}"
+}
+```

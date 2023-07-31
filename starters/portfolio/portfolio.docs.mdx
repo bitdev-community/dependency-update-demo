@@ -1,0 +1,38 @@
+---
+description: A starter for portfolio app
+labels: ["generator", "templates", "workspace", "starter", "portfolio"]
+---
+
+This is a [starter](https://bit-dev/reference/starters/create-starter) for the Portfolio Application, [portfolio](https://bit.cloud/showoff.personal-portfolio/apps/portfolio).
+
+## How to get started
+
+Start a new portfolio workspace:
+
+```
+bit new portfolio portfolio-workspace --aspect showoff.starters/portfolio
+```
+
+Create a new lane:
+
+```
+bit lane create my-contribution
+```
+
+Import the components you'd like to update (if there are any):
+
+```
+bit import showoff.personal-portfolio/ui/about/history --dependents
+```
+
+Snap your changes:
+
+```
+bit snap -message "my changes"
+```
+
+Export your changes:
+
+```
+bit export
+```
