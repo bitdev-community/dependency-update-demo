@@ -3,369 +3,464 @@
 /**
  * The Bitmap file is an auto generated file used by Bit to track all your Bit components. It maps the component to a folder in your file system.
  * This file should be committed to VCS(version control).
- * Components are listed using their component ID (https://bit.dev/docs/components/component-id).
+ * Components are listed using their component ID (https://bit.dev/reference/components/component-id).
  * If you want to delete components you can use the "bit remove <component-id>" command.
- * See the docs (https://bit.dev/docs/components/removing-components) for more information, or use "bit remove --help".
+ * See the docs (https://bit.dev/reference/components/removing-components) for more information, or use "bit remove --help".
  */
 
 {
     "api/form-handler": {
+        "name": "api/form-handler",
         "scope": "showoff.contact-me",
         "version": "0.0.5",
         "mainFile": "index.ts",
         "rootDir": "contact-me/api/form-handler"
     },
     "apps/portfolio": {
+        "name": "apps/portfolio",
         "scope": "showoff.personal-portfolio",
-        "version": "0.0.97",
+        "version": "0.0.99",
         "mainFile": "index.ts",
         "rootDir": "personal-portfolio/apps/portfolio"
     },
     "brand/logo": {
+        "name": "brand/logo",
         "scope": "showoff.design",
-        "version": "0.0.47",
+        "version": "0.0.48",
         "mainFile": "index.ts",
         "rootDir": "design/brand/logo"
     },
     "constants/data": {
+        "name": "constants/data",
         "scope": "showoff.personal-portfolio",
-        "version": "0.0.8",
+        "version": "0.0.10",
         "mainFile": "index.ts",
         "rootDir": "personal-portfolio/constants/data"
     },
     "contexts/settings-context": {
+        "name": "contexts/settings-context",
         "scope": "showoff.personal-portfolio",
-        "version": "0.0.36",
+        "version": "0.0.38",
         "mainFile": "index.ts",
         "rootDir": "personal-portfolio/contexts/settings-context"
     },
     "elements/card": {
+        "name": "elements/card",
         "scope": "showoff.design",
-        "version": "0.0.46",
+        "version": "0.0.47",
         "mainFile": "index.ts",
         "rootDir": "design/elements/card"
     },
     "elements/chip": {
+        "name": "elements/chip",
         "scope": "showoff.design",
-        "version": "0.0.37",
+        "version": "0.0.38",
         "mainFile": "index.ts",
         "rootDir": "design/elements/chip"
     },
     "elements/zoom-in-card-media": {
+        "name": "elements/zoom-in-card-media",
         "scope": "showoff.design",
-        "version": "0.0.7",
+        "version": "0.0.8",
         "mainFile": "index.ts",
         "rootDir": "design/elements/zoom-in-card-media"
     },
     "entities/history": {
+        "name": "entities/history",
         "scope": "showoff.personal-portfolio",
         "version": "0.0.1",
         "mainFile": "index.ts",
         "rootDir": "personal-portfolio/entities/history"
     },
     "entities/project": {
+        "name": "entities/project",
         "scope": "showoff.personal-portfolio",
         "version": "0.0.5",
         "mainFile": "index.ts",
         "rootDir": "personal-portfolio/entities/project"
     },
     "envs/react-18": {
+        "name": "envs/react-18",
         "scope": "showoff.dev",
-        "version": "0.0.9",
+        "version": "0.0.10",
         "mainFile": "index.ts",
-        "rootDir": "dev/envs/react-18"
+        "rootDir": "dev/envs/react-18",
+        "config": {
+            "teambit.dependencies/dependency-resolver": {
+                "policy": {
+                    "dependencies": {
+                        "eslint-plugin-import": "2.22.1",
+                        "eslint-plugin-jest": "24.1.5",
+                        "eslint-plugin-jsx-a11y": "6.4.1",
+                        "eslint-plugin-mdx": "1.13.0",
+                        "eslint-plugin-react": "7.22.0",
+                        "eslint-plugin-react-hooks": "4.2.0",
+                        "formik": "2.4.5",
+                        "graphql": "16.8.1"
+                    }
+                }
+            }
+        }
     },
     "envs/react-with-mui": {
+        "name": "envs/react-with-mui",
         "scope": "showoff.dev",
-        "version": "0.0.31",
+        "version": "0.0.32",
         "mainFile": "index.ts",
-        "rootDir": "dev/envs/react-with-mui"
+        "rootDir": "dev/envs/react-with-mui",
+        "config": {
+            "teambit.dependencies/dependency-resolver": {
+                "policy": {
+                    "dependencies": {
+                        "eslint-plugin-import": "2.22.1",
+                        "eslint-plugin-jest": "24.1.5",
+                        "eslint-plugin-jsx-a11y": "6.4.1",
+                        "eslint-plugin-mdx": "1.13.0",
+                        "eslint-plugin-react": "7.22.0",
+                        "eslint-plugin-react-hooks": "4.2.0",
+                        "formik": "2.4.5",
+                        "graphql": "16.8.1"
+                    }
+                }
+            }
+        }
     },
     "fonts/ciruclar-xx": {
+        "name": "fonts/ciruclar-xx",
         "scope": "showoff.design",
         "version": "0.0.7",
         "mainFile": "index.ts",
         "rootDir": "design/fonts/ciruclar-xx"
     },
     "hooks/use-local-storage": {
+        "name": "hooks/use-local-storage",
         "scope": "showoff.personal-portfolio",
-        "version": "0.0.3",
+        "version": "0.0.4",
         "mainFile": "index.ts",
-        "rootDir": "personal-portfolio/hooks/use-local-storage"
+        "rootDir": "personal-portfolio/hooks/use-local-storage",
+        "config": {
+            "teambit.react/react-env@1.0.38": {}
+        }
     },
     "hooks/use-project": {
+        "name": "hooks/use-project",
         "scope": "showoff.personal-portfolio",
-        "version": "0.0.12",
+        "version": "0.0.13",
         "mainFile": "index.ts",
         "rootDir": "personal-portfolio/hooks/use-project"
     },
     "hooks/use-projects": {
+        "name": "hooks/use-projects",
         "scope": "showoff.personal-portfolio",
-        "version": "0.0.16",
+        "version": "0.0.17",
         "mainFile": "index.ts",
         "rootDir": "personal-portfolio/hooks/use-projects"
     },
     "icons/bit": {
+        "name": "icons/bit",
         "scope": "showoff.design",
-        "version": "0.0.9",
+        "version": "0.0.10",
         "mainFile": "index.ts",
         "rootDir": "design/icons/bit"
     },
     "icons/github": {
+        "name": "icons/github",
         "scope": "showoff.design",
-        "version": "0.0.9",
+        "version": "0.0.10",
         "mainFile": "index.ts",
         "rootDir": "design/icons/github"
     },
     "icons/link-icon": {
+        "name": "icons/link-icon",
         "scope": "showoff.design",
-        "version": "0.0.9",
+        "version": "0.0.10",
         "mainFile": "index.ts",
         "rootDir": "design/icons/link-icon"
     },
     "inputs/button": {
+        "name": "inputs/button",
         "scope": "showoff.design",
-        "version": "0.0.37",
+        "version": "0.0.38",
         "mainFile": "index.ts",
         "rootDir": "design/inputs/button"
     },
     "inputs/icon-text-button": {
+        "name": "inputs/icon-text-button",
         "scope": "showoff.design",
-        "version": "0.0.9",
+        "version": "0.0.10",
         "mainFile": "index.ts",
         "rootDir": "design/inputs/icon-text-button"
     },
     "inputs/text-field": {
+        "name": "inputs/text-field",
         "scope": "showoff.design",
-        "version": "0.0.46",
+        "version": "0.0.47",
         "mainFile": "index.ts",
         "rootDir": "design/inputs/text-field"
     },
     "inputs/toggle-button": {
+        "name": "inputs/toggle-button",
         "scope": "showoff.design",
-        "version": "0.0.44",
+        "version": "0.0.45",
         "mainFile": "index.ts",
         "rootDir": "design/inputs/toggle-button"
     },
     "layouts/main": {
+        "name": "layouts/main",
         "scope": "showoff.personal-portfolio",
-        "version": "0.0.51",
+        "version": "0.0.53",
         "mainFile": "index.ts",
         "rootDir": "personal-portfolio/layouts/main"
     },
     "layouts/margin": {
+        "name": "layouts/margin",
         "scope": "showoff.design",
-        "version": "0.0.23",
+        "version": "0.0.24",
         "mainFile": "index.ts",
         "rootDir": "design/layouts/margin"
     },
     "navigation/appbar": {
+        "name": "navigation/appbar",
         "scope": "showoff.personal-portfolio",
-        "version": "0.0.47",
+        "version": "0.0.49",
         "mainFile": "index.ts",
         "rootDir": "personal-portfolio/navigation/appbar"
     },
     "navigation/appfooter": {
+        "name": "navigation/appfooter",
         "scope": "showoff.personal-portfolio",
-        "version": "0.0.39",
+        "version": "0.0.41",
         "mainFile": "index.ts",
         "rootDir": "personal-portfolio/navigation/appfooter"
     },
     "navigation/breadcrumb": {
+        "name": "navigation/breadcrumb",
         "scope": "showoff.design",
-        "version": "0.0.38",
+        "version": "0.0.39",
         "mainFile": "index.ts",
         "rootDir": "design/navigation/breadcrumb"
     },
     "navigation/footer": {
+        "name": "navigation/footer",
         "scope": "showoff.design",
-        "version": "0.0.45",
+        "version": "0.0.47",
         "mainFile": "index.ts",
         "rootDir": "design/navigation/footer"
     },
     "navigation/header": {
+        "name": "navigation/header",
         "scope": "showoff.design",
-        "version": "0.0.45",
+        "version": "0.0.46",
         "mainFile": "index.ts",
         "rootDir": "design/navigation/header"
     },
     "navigation/link": {
+        "name": "navigation/link",
         "scope": "showoff.design",
-        "version": "0.0.23",
+        "version": "0.0.24",
         "mainFile": "index.ts",
         "rootDir": "design/navigation/link"
     },
     "navigation/link-text": {
+        "name": "navigation/link-text",
         "scope": "showoff.design",
-        "version": "0.0.46",
+        "version": "0.0.47",
         "mainFile": "index.ts",
         "rootDir": "design/navigation/link-text"
     },
     "pages/about-page": {
+        "name": "pages/about-page",
         "scope": "showoff.personal-portfolio",
-        "version": "0.0.38",
+        "version": "0.0.39",
         "mainFile": "index.ts",
         "rootDir": "personal-portfolio/pages/about-page"
     },
     "pages/contact-page": {
+        "name": "pages/contact-page",
         "scope": "showoff.contact-me",
-        "version": "0.0.43",
+        "version": "0.0.44",
         "mainFile": "index.ts",
         "rootDir": "contact-me/pages/contact-page"
     },
     "pages/individual-project-page": {
+        "name": "pages/individual-project-page",
         "scope": "showoff.personal-portfolio",
-        "version": "0.0.37",
+        "version": "0.0.38",
         "mainFile": "index.ts",
         "rootDir": "personal-portfolio/pages/individual-project-page"
     },
     "pages/landing-page": {
+        "name": "pages/landing-page",
         "scope": "showoff.personal-portfolio",
-        "version": "0.0.47",
+        "version": "0.0.48",
         "mainFile": "index.ts",
         "rootDir": "personal-portfolio/pages/landing-page"
     },
     "pages/projects-page": {
+        "name": "pages/projects-page",
         "scope": "showoff.personal-portfolio",
-        "version": "0.0.43",
+        "version": "0.0.44",
         "mainFile": "index.ts",
         "rootDir": "personal-portfolio/pages/projects-page"
     },
     "portfolio": {
+        "name": "portfolio",
         "scope": "showoff.starters",
         "version": "0.0.22",
         "mainFile": "index.ts",
         "rootDir": "starters/portfolio"
     },
     "preview-contexts/mui-preview-context": {
+        "name": "preview-contexts/mui-preview-context",
         "scope": "showoff.dev",
-        "version": "0.0.1",
+        "version": "0.0.2",
         "mainFile": "index.ts",
         "rootDir": "dev/preview-contexts/mui-preview-context"
     },
     "theme/base-theme": {
+        "name": "theme/base-theme",
         "scope": "showoff.design",
         "version": "0.0.16",
         "mainFile": "index.ts",
         "rootDir": "design/theme/base-theme"
     },
     "theme/dark-portfolio-theme": {
+        "name": "theme/dark-portfolio-theme",
         "scope": "showoff.personal-portfolio",
-        "version": "0.0.23",
+        "version": "0.0.24",
         "mainFile": "index.ts",
         "rootDir": "personal-portfolio/theme/dark-portfolio-theme"
     },
     "theme/dark-theme": {
+        "name": "theme/dark-theme",
         "scope": "showoff.design",
-        "version": "0.0.38",
+        "version": "0.0.39",
         "mainFile": "index.ts",
         "rootDir": "design/theme/dark-theme"
     },
     "theme/light-portfolio-theme": {
+        "name": "theme/light-portfolio-theme",
         "scope": "showoff.personal-portfolio",
         "version": "0.0.18",
         "mainFile": "index.ts",
         "rootDir": "personal-portfolio/theme/light-portfolio-theme"
     },
     "theme/light-theme": {
+        "name": "theme/light-theme",
         "scope": "showoff.design",
         "version": "0.0.30",
         "mainFile": "index.ts",
         "rootDir": "design/theme/light-theme"
     },
     "theme/theme-creator": {
+        "name": "theme/theme-creator",
         "scope": "showoff.design",
         "version": "0.0.10",
         "mainFile": "index.ts",
         "rootDir": "design/theme/theme-creator"
     },
     "theme/theme-provider": {
+        "name": "theme/theme-provider",
         "scope": "showoff.design",
-        "version": "0.0.32",
+        "version": "0.0.33",
         "mainFile": "index.ts",
         "rootDir": "design/theme/theme-provider"
     },
     "theme/theme-toggle": {
+        "name": "theme/theme-toggle",
         "scope": "showoff.design",
-        "version": "0.0.33",
+        "version": "0.0.34",
         "mainFile": "index.ts",
         "rootDir": "design/theme/theme-toggle"
     },
     "transformers/portfolio-transformer": {
+        "name": "transformers/portfolio-transformer",
         "scope": "showoff.dev",
         "version": "0.0.8",
         "mainFile": "index.ts",
         "rootDir": "dev/transformers/portfolio-transformer"
     },
     "typography/heading": {
+        "name": "typography/heading",
         "scope": "showoff.design",
-        "version": "0.0.35",
+        "version": "0.0.36",
         "mainFile": "index.ts",
         "rootDir": "design/typography/heading"
     },
     "typography/typography": {
+        "name": "typography/typography",
         "scope": "showoff.design",
-        "version": "0.0.35",
+        "version": "0.0.36",
         "mainFile": "index.ts",
         "rootDir": "design/typography/typography"
     },
     "ui/about/history": {
+        "name": "ui/about/history",
         "scope": "showoff.personal-portfolio",
-        "version": "0.0.41",
+        "version": "0.0.42",
         "mainFile": "index.ts",
         "rootDir": "personal-portfolio/ui/about/history"
     },
     "ui/artwork": {
+        "name": "ui/artwork",
         "scope": "showoff.contact-me",
-        "version": "0.0.38",
+        "version": "0.0.39",
         "mainFile": "index.ts",
         "rootDir": "contact-me/ui/artwork"
     },
     "ui/contact-form": {
+        "name": "ui/contact-form",
         "scope": "showoff.contact-me",
-        "version": "0.0.34",
+        "version": "0.0.35",
         "mainFile": "index.ts",
         "rootDir": "contact-me/ui/contact-form"
     },
     "ui/person/artwork": {
+        "name": "ui/person/artwork",
         "scope": "showoff.personal-portfolio",
-        "version": "0.0.39",
+        "version": "0.0.40",
         "mainFile": "index.ts",
         "rootDir": "personal-portfolio/ui/person/artwork"
     },
     "ui/person/picture": {
+        "name": "ui/person/picture",
         "scope": "showoff.personal-portfolio",
-        "version": "0.0.39",
+        "version": "0.0.40",
         "mainFile": "index.ts",
         "rootDir": "personal-portfolio/ui/person/picture"
     },
     "ui/projects/projects-list": {
+        "name": "ui/projects/projects-list",
         "scope": "showoff.personal-portfolio",
-        "version": "0.0.35",
+        "version": "0.0.36",
         "mainFile": "index.ts",
         "rootDir": "personal-portfolio/ui/projects/projects-list"
     },
     "ui/social/icons": {
+        "name": "ui/social/icons",
         "scope": "showoff.personal-portfolio",
-        "version": "0.0.15",
+        "version": "0.0.16",
         "mainFile": "index.ts",
         "rootDir": "personal-portfolio/ui/social/icons"
     },
     "widgets/sizeable-box": {
+        "name": "widgets/sizeable-box",
         "scope": "showoff.design",
-        "version": "0.0.43",
+        "version": "0.0.44",
         "mainFile": "index.ts",
         "rootDir": "design/widgets/sizeable-box"
     },
     "widgets/text-icon": {
+        "name": "widgets/text-icon",
         "scope": "showoff.design",
-        "version": "0.0.40",
+        "version": "0.0.41",
         "mainFile": "index.ts",
         "rootDir": "design/widgets/text-icon"
     },
     "widgets/work-item": {
+        "name": "widgets/work-item",
         "scope": "showoff.design",
-        "version": "0.0.46",
+        "version": "0.0.47",
         "mainFile": "index.ts",
         "rootDir": "design/widgets/work-item"
     },
